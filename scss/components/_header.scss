@@ -7,13 +7,20 @@
   left: 0;
   border-bottom: 1px solid #ececec;
   padding: 24px 0 25px;
+ 
  &__box {
   display: flex;
   align-items: center;
   gap: 5px;
+  justify-content: space-between;
 }
 &-nav {
   display: flex;
   margin-left: 94px;
 }
+&__burger-btn{
+  @media screen and (min-width: 768px){
+      display: none;
+    } 
+  }
 }
