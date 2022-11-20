@@ -6,11 +6,12 @@
   top: 0;
   left: 0;
   border-bottom: 1px solid #ececec;
-  padding: 24px 0 25px;
-@media screen and (max-width: 767px){
-  .header {
-    width: 480px;
-  } 
+  padding: 10px 0;
+@media screen and (min-width: $tablet) {
+    padding: 21px 0;
+  }
+@media screen and (min-width: $desktop) {
+  padding: 25px 0;
 }
  &__box {
   display: flex;
@@ -21,7 +22,10 @@
 &-nav {
   display: flex;
   margin-left: 0;
-@media screen and (min-width: $tablet){
+@media screen and (min-width: $tablet) {
+  margin-left: 88px;
+}
+@media screen and (min-width: $desktop){
   margin-left: 94px;
 }
 }
