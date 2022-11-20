@@ -1,9 +1,12 @@
 .footer-social {
     display: flex;
     flex-direction: column;
-    width: 206px;
+    max-width: 206px;
+    
+  @media screen and (min-width: $desktop) {
     margin-left: 0px;
     margin-right: 90px;
+  }
     &__text {
     display: flex;
     font-weight: 700;
