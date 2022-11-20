@@ -1,32 +1,37 @@
 .ourteam-cards {
     display: flex;
-    justify-content: space-between;
-    flex-basis: calc((100% - 90px) / 4);
+    // justify-content: space-between;
+    // flex-basis: calc((100% - 90px) / 4);
     flex-wrap: wrap;
     gap: 30px;
-    margin-top: 50px;
-@media screen and (min-width: 480px){
-      justify-content: center;
-  }
-@media screen and (min-width: 768px){
+@media screen and (min-width: $tablet){
   flex-basis: calc((100% - 90px) / 2);
   justify-content: center;
-} 
+}
+@media screen and (min-width: $desktop) {
+  flex-basis: calc((100% - 90px) / 4);
+  justify-content: space-between;
+}
 &__item {
     background-color: var(--color-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    width: 450px;
+@media screen and (min-width: $tablet) {
+    width: 354px;
   }
-  &__title {
-    font-size: 36px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-  }
-  &__text-position {
+@media screen and (min-width: $desktop) {
+  width: 270px;
+}
+}
+&__img{
+  width: 100%;
+}
+&__text-position {
     margin: 30px auto 16px;
   }
-  &__name {
+&__name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
@@ -34,7 +39,7 @@
     color: var(--primary-text-color);
     margin-bottom: 10px;
   }
-  &__text {
+&__text {
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
