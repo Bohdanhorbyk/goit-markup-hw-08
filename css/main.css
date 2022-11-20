@@ -63,6 +63,10 @@ img {
   margin: -1px;
 }
 
+.hide {
+  display: none;
+}
+
 .address__list {
   display: flex;
   justify-content: space-between;
@@ -481,11 +485,17 @@ img {
 .logo {
   font-family: var(--font-logo);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.16;
   text-decoration: none;
   letter-spacing: 0.03em;
   color: var(--color-accent);
+}
+@media screen and (minx-width: 767.98px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.2;
+  }
 }
 .logo--black {
   color: var(--primary-text-color);
@@ -757,6 +767,11 @@ img {
   border-bottom: 1px solid #ececec;
   padding: 24px 0 25px;
 }
+@media screen and (max-width: 767px) {
+  .header .header {
+    width: 480px;
+  }
+}
 .header__box {
   display: flex;
   align-items: center;
@@ -766,6 +781,11 @@ img {
 .header-nav {
   display: flex;
   margin-left: 94px;
+}
+@media screen and (max-width: 767px) {
+  .header-nav {
+    margin-left: 0;
+  }
 }
 @media screen and (min-width: 768px) {
   .header__burger-btn {

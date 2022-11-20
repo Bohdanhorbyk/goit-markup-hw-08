@@ -5,22 +5,31 @@
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/bgimg.jpg);
   background-repeat: no-repeat;
-  padding: 200px 0;
+  padding: 118px 0;
   margin: 0 auto;
   max-width: 1600px;
-  &-flex {
+@media screen and (max-width: $tablet){
+}  
+&-flex {
   text-align: center;
 }
-  &__title {
+&__title {
   color: var(--color-white);
   text-transform: uppercase;
   font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  margin: 0 auto 30px;
+@media screen and (min-width: $desktop){
   font-size: 44px;
   line-height: 1.4;
   max-width: 696px;
-  margin: 0 auto 30px;
+  padding: 200px 0;
+  max-width: 1600px;
 }
-  &__button {
+}
+&__button {
   padding: 10px 32px;
 }
 }
