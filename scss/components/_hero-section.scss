@@ -8,6 +8,10 @@
   padding: 118px 0;
   margin: 0 auto;
   max-width: 1600px;  
+@media screen and (min-width: $desktop) {
+    padding: 200px 0;
+    max-width: 1600px;
+  }
 &-flex {
   text-align: center;
 }
@@ -20,13 +24,12 @@
   max-width: 380px;
   letter-spacing: 0.06em;
   margin: 0 auto 30px;
-@media screen and (min-width: $desktop){
-  font-size: 44px;
-  line-height: 1.4;
-  max-width: 696px;
-  padding: 200px 0;
-  max-width: 1600px;
-}
+@media screen and (min-width: $desktop) {
+    font-size: 44px;
+    line-height: 1.4;
+    max-width: 696px;
+  }
+  
 }
 &__button {
   padding: 10px 32px;
