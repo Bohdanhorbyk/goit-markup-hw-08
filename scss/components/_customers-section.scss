@@ -6,34 +6,39 @@
   flex-direction: column;
   align-items: center;
 }
+&__title {
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+@media screen and (min-width: $desktop) {
+  margin-bottom: 50px;
+  font-size: 36px;
+  }
+}
   &__list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
 }
-&__title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-}
 &__item {
   display: flex;
-  flex-basis: calc((100% - 30px) / 2);
   justify-content: center;
   align-items: center;
-  width: 170px;
+  max-width: 210px;
+  flex-basis: calc((100% - 30px) / 2);
   height: 92px;
-  @media screen and (min-width: 768px){
+@media screen and (min-width: $tablet){
+    max-width: 216px;
     flex-basis: calc((100% - 60px) / 3);
-    justify-content: center;
+    justify-content: space-around;
     } 
-  @media screen and (min-width: 1200px){
+@media screen and (min-width: $desktop){
+    max-width: 170px;
     flex-basis: calc((100% - 150px) / 6);
-    justify-content: center;
-    }   
+  }   
 }
 &__link {
   display: flex;
