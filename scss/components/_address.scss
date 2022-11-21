@@ -1,10 +1,13 @@
 .address{
+  margin: 28px auto 0;
+  max-width: 232px;
+  @media screen and (min-width: $tablet) and (max-width: 1199.98px) {
+    margin: 0;
+  }
   &__list {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    gap: 9px;
-    margin-top: 20px;
+    gap: 12px;
   }
   &__link {
     font-style: normal;

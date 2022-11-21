@@ -4,7 +4,14 @@
   flex-wrap: wrap;
   text-align: center;
   gap: 8px;
+  margin-bottom: 46px;
+@media screen and (min-width: $tablet) {
+  margin-bottom: 30px;
+  }
+@media screen and (min-width: $desktop) {
   margin-bottom: 50px;
+  }
+ 
   &__button {
   font-family: inherit;
   font-style: normal;
