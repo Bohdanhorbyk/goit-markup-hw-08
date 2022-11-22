@@ -30,6 +30,11 @@
 }
 }
 &__burger-btn{
+  background-color: var(--color-white);
+  border: none;
+  &:hover {
+    fill: var(--color-accent);
+  }
   @media screen and (min-width: $tablet){
       display: none;
     } 

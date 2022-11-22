@@ -22,10 +22,9 @@
       <div class="container header__box">
         <a class="logo" href="./index.html"> Web<span class="logo--black">Studio</span> </a>
         <nav class="header-nav">
-          <button class="header__burger-btn" type="button">
-            <svg width="40" height="40" aria-label="mobile menu switch">
-              <!-- <use class="burger-close" href="./images/icons.svg#icon-cross"></use> -->
-              <use class="burger-open" href="./images/icons.svg#icon-burger-menu"></use>
+          <button class="header__burger-btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="40" height="40" aria-label="mobile-menu-switch">
+              <use href="./images/icons.svg#icon-burger-menu"></use>
             </svg>
           </button>
           <ul class="site-nav">
@@ -368,5 +367,42 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <div class="mobile-menu__container">
+        <button class="mobile-menu__close-btn js-close-menu" type="button">
+          <svg width="40" height="40" aria-label="mobile menu switch">
+            <use class="burger-close" href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu__navigation">
+          <ul class="mobile-menu__nav">
+            <li class="mobile-menu__item"><a class="mobile-menu__link"
+                href="./index.html">Студія</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link mobile-menu__link--current" href="./portfolio.html">Портфоліо</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="mobile-contacts">
+          <ul class="mobile-contacts__list">
+            <li class="mobile-contacts__item"><a href="tel:+380961111" class="mobile-contacts__link">+380 96 111 11 11</a>
+            </li>
+            <li class="mobile-contacts__item"><a href="mailto:info@devstudio.com"
+                class="mobile-contacts__link mobile-contacts__link--text-color">info@devstudio.com</a></li>
+          </ul>
+        </div>
+        <div class="mobile-social">
+          <ul class="mobile-social__list">
+            <li class="mobile-social__item"><a href="https://www.instagram.com/" class="mobile-social__link">Instagram</a>
+            </li>
+            <li class="mobile-social__item"><a href="https://twitter.com/" class="mobile-social__link">Twitter</a></li>
+            <li class="mobile-social__item"><a href="https://www.facebook.com/" class="mobile-social__link">Facebook</a>
+            </li>
+            <li class="mobile-social__item"><a href="https://www.linkedin.com/" class="mobile-social__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
