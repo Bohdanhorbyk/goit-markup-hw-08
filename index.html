@@ -23,10 +23,9 @@
         <a class="logo" href="./index.html"> Web<span class="logo--black">Studio</span> </a>
         
         <nav class="header-nav">
-          <button class="header__burger-btn" type="button">
-            <svg width="40" height="40" aria-label="mobile menu switch">
-              <!-- <use class="burger-close" href="./images/icons.svg#icon-cross"></use> -->
-              <use class="burger-open" href="./images/icons.svg#icon-burger-menu"></use>
+          <button class="header__burger-btn header__burger--open" type="button" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="40" height="40" aria-label="mobile-menu-switch">
+              <use href="./images/icons.svg#icon-burger-menu"></use>
             </svg>
           </button>
           <ul class="site-nav">
@@ -41,6 +40,35 @@
             </li>
           </ul>
         </nav>
+        <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu__container">
+          <button class="mobile-menu__close-btn" type="button">
+            <svg width="40" height="40" aria-label="mobile menu switch">
+              <use class="burger-close" href="./images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu__navigation">
+            <ul class="mobile-menu__nav">
+              <li class="mobile-menu__item"><a class="mobile-menu__link mobile-menu__link--current" href="./index.html">Студія</a></li>
+              <li class="mobile-menu__item"><a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a></li>
+              <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Контакти</a></li>
+            </ul>
+          </div>
+          <div class="mobile-contacts">
+            <ul class="mobile-contacts__list">
+              <li class="mobile-contacts__item"><a href="tel:+380961111" class="mobile-contacts__link">+380 96 111 11 11</a></li>
+              <li class="mobile-contacts__item"><a href="mailto:info@devstudio.com" class="mobile-contacts__link mobile-contacts__link--text-color">info@devstudio.com</a></li>
+            </ul>
+          </div>
+          <div class="mobile-social">
+            <ul class="mobile-social__list">
+              <li class="mobile-social__item"><a href="https://www.instagram.com/" class="mobile-social__link">Instagram</a></li>
+              <li class="mobile-social__item"><a href="https://twitter.com/" class="mobile-social__link">Twitter</a></li>
+              <li class="mobile-social__item"><a href="https://www.facebook.com/" class="mobile-social__link">Facebook</a></li>
+              <li class="mobile-social__item"><a href="https://www.linkedin.com/" class="mobile-social__link">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
         <ul class="contacts">
           <li class="contacts__item">
             <a class="contacts__link" href="mailto:info@devstudio.com">
@@ -60,7 +88,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="hero hide">
+      <section class="hero">
         <div class="container hero-flex">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="button hero__button" type="button" data-modal-open>
@@ -68,7 +96,7 @@
           </button>
         </div>
       </section>
-      <section class="features section hide">
+      <section class="features section">
         <div class="container features-flex">
           <h2 class="features__title visually-hidden">Наші переваги</h2>
           <ul class="features__list">
@@ -119,7 +147,7 @@
           </ul>
         </div>
       </section>
-      <section class="specifics section hide">
+      <section class="specifics section">
         <div class="container specifics-flex">
           <h2 class="specifics__title">Чим ми займаємося</h2>
           <ul class="specifics__list">
@@ -162,7 +190,7 @@
           </ul>
         </div>
       </section>
-      <section class="ourteam section section--bgr hide">
+      <section class="ourteam section section--bgr">
         <div class="ourteam-flex container">
           <h2 class="ourteam__title">Наша команда</h2>
           <ul class="ourteam-cards">
@@ -349,7 +377,7 @@
           </ul>
         </div>
       </section>
-      <section class="customers section hide">
+      <section class="customers section">
         <div class="container customers-flex">
           <h2 class="customers__title">Постійні клієнти</h2>
           <ul class="customers__list">
@@ -397,7 +425,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer hide">
       <div class="container footer-baseline">
         <div class="footer-flex">
           <a class="logo" href="./index.html"> Web<span class="logo--white">Studio</span></a>
@@ -470,12 +498,7 @@
         </div>
       </div>
     </footer>
-    <div class="mobile-menu">
-      <div class="container">
-        <nav class="mobile-menu__nav"></nav>
-      </div>
-    </div>
-    <div class="backdrope is-hidden hide" data-modal>
+    <div class="backdrope is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__close-btn" data-modal-close>
           <svg width="18" height="18">
