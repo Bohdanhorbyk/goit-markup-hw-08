@@ -307,7 +307,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .customers__item {
-    max-width: 170px;
+    width: 170px;
     flex-basis: calc((100% - 150px) / 6);
   }
 }
@@ -416,7 +416,10 @@ footer {
 }
 @media screen and (min-width: 768px) {
   footer-baseline {
+    display: inline-flex;
+    text-align: justify;
     text-align: left;
+    flex-wrap: wrap;
   }
 }
 footer-flex {
@@ -485,7 +488,7 @@ footer-flex {
     align-items: center;
     justify-content: space-between;
     align-items: flex-start;
-    width: 570px;
+    max-width: 570px;
     gap: 20px;
   }
 }

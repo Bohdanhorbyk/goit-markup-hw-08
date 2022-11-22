@@ -36,7 +36,7 @@
     justify-content: space-around;
     } 
 @media screen and (min-width: $desktop){
-    max-width: 170px;
+    width: 170px;
     flex-basis: calc((100% - 150px) / 6);
   }   
 }

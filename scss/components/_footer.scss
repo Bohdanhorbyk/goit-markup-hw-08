@@ -11,8 +11,10 @@ footer {
   }
 &-baseline {
   @media screen and (min-width: $tablet){
-    // text-align: justify;
+    display: inline-flex;
+    text-align: justify;
     text-align: left;
+    flex-wrap: wrap;
     // display: flex;
     // flex-direction: row;
     // justify-content: space-around;
