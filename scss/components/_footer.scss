@@ -2,39 +2,43 @@
 footer {
   background-color: var(--color-footer);
   padding: 60px 0;
-  text-align: center;
-@media screen and (min-width: $tablet){
+  // text-align: center;
+@media screen and (min-width: $tablet) and (max-width: 1199.98px){
   padding: 60px 86px 60px 76px;
-  // display: flex;
-  text-align: start;
-  flex-direction: row;
+  display: flex;
+  // flex-direction: row;
   }
 &-baseline {
   @media screen and (min-width: $tablet){
-    display: inline-flex;
-    text-align: justify;
-    text-align: left;
-    flex-wrap: wrap;
-    // display: flex;
+    // display: inline-flex;
+    // text-align: baseline;
     // flex-direction: row;
+    // text-align: left;
+    // flex-wrap: wrap;
     // justify-content: space-around;
-    // align-items: baseline;
+    // text-align: center;
+
   }
-  // @media screen and (min-width: $desktop) {
-  //   display: flex;
-  //   align-items: baseline;
-  // }  
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
+  }  
   }
 
-  &-flex {
-    display:flex;
-    // max-width: 230px;
-  // @media screen and (min-width: $desktop) {
-  //   display: inline-flex;
-  //   flex-direction: column;
-  //   width: 230px;
-  //   margin-left: 0px;
-  //   margin-right: 70px;
-  // }
+  &-contacts {
+    display:block;
+    max-width: 230px;
+  @media screen and (min-width: $tablet) and (max-width: 1199.98px) {
+    display: flex;
+    text-align: start;
+    margin: 0;
+    }
+  @media screen and (min-width: $desktop) {
+    display: inline-flex;
+    flex-direction: column;
+    width: 230px;
+    margin-left: 0px;
+    margin-right: 70px;
+  }
   }
 }
