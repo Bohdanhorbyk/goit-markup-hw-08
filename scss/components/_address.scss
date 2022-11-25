@@ -1,8 +1,5 @@
 .address{
   margin: 28px auto 0;
-  @media screen and (min-width: $tablet) and (max-width: 1199.98px) {
-    margin: 0;
-  }
   &__list {
     display: flex;
     flex-direction: column;

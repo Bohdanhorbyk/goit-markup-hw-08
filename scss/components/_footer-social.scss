@@ -1,14 +1,13 @@
 .footer-social {
-    margin: 60px auto 0;
-  @media screen and (min-width: $tablet) and (max-width: 1199.98px) {
-      margin: 0;
-    }
+    margin: 60px auto;
+  @media screen and (min-width: $tablet) {
+    margin:0;
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin-left: 0px;
-    margin-right: 90px;
   }
     &__text {
     margin-bottom: 20px;
@@ -19,6 +18,9 @@
     line-height: 1.15;
     letter-spacing: 0.03em;
     color: var(--color-white);
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+  }
   }
     &__list {
     display: inline-flex;
