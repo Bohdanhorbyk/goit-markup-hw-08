@@ -48,9 +48,10 @@ display: none;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: none;
     background-color: var(--color-white);
     cursor: pointer;
+
 }
 &__navigation{
     margin-bottom: 306px;
