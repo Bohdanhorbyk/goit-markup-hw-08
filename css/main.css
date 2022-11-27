@@ -1138,6 +1138,7 @@ img {
 @media screen and (min-width: 1200px) {
   .hero-overlay {
     width: 100%;
+    background-size: 1600px 600px;
     max-width: 1600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mtd/desktop/hero-1600-1x.jpg");
   }
@@ -1145,7 +1146,6 @@ img {
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.0416666666666665), screen and (min-width: 1200px) and (min-resolution: 196dpi), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-overlay {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mtd/desktop/hero-3200-2x.jpg");
-    background-size: 1600px 600px;
   }
 }
 .hero__title {
