@@ -1095,15 +1095,18 @@ img {
   }
 }
 
+.hero {
+  max-width: 1600px;
+}
 .hero-overlay {
   background-size: cover;
   background-color: var(--color-hero);
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-mtd/mobile/hero-480-1x.jpg");
   padding: 118px 0;
   margin: 0 auto;
   max-width: 480px;
   text-align: center;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-mtd/mobile/hero-480-1x.jpg");
 }
 @media screen and (min-width: 768px), screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero-overlay {
