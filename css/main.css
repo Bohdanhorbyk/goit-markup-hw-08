@@ -1108,17 +1108,34 @@ img {
   text-align: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mtd/mobile/hero-480-1x.jpg");
 }
-@media screen and (min-width: 768px), screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero-overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mtd/mobile/hero-960-2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
   .hero-overlay {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mtd/tablet/hero-768-1x.jpg");
     max-width: 768px;
   }
 }
-@media screen and (min-width: 1200px), screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
+@media screen and (min-width: 768px), screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero-overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mtd/tablet/hero-1536-2x.jpg");
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .hero-overlay {
     padding: 200px 0;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mtd/desktop/hero-1600-1x.jpg");
     max-width: 1600px;
+  }
+}
+@media screen and (min-width: 1200px), screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2.0416666666666665), screen and (min-resolution: 196dpi), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
+  .hero-overlay {
+    padding: 200px 0;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mtd/desktop/hero-3200-2x.jpg");
   }
 }
 .hero__title {
