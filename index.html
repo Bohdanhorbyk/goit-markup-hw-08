@@ -125,18 +125,32 @@
           <ul class="specifics__list">
             <li class="specifics__item">
               <div class="specifics-relative">
-                <img
-                  class="specifics__img"
-                  src="./images/img1.jpg"
-                  alt="фото верстки сайту"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source srcset="./images/desktop/web-studio/specifics/desktop-app-370-1x.webp 1x,./images/desktop/web-studio/specifics/desktop-app-740-2x.webp 2x,./images/desktop/web-studio/specifics/desktop-app-1110-3x.webp 3x," type="image/webp" media="(min-width: 1200px)"/>
+                  <source
+                    srcset="./images/desktop/web-studio/specifics/desktop-app-370-1x.jpg 1x,./images/desktop/web-studio/specifics/desktop-app-740-2x.jpg 2x,./images/desktop/web-studio/specifics/desktop-app-1110-3x.jpg 3x,"
+                    type="image/jpg" media="(min-width: 1200px)" />
+                  <img
+                    class="specifics__img"
+                    src="./images/img1.jpg"
+                    alt="фото верстки сайту"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <p class="specifics__text">Десктопні додатки</p>
+                
               </div>
             </li>
             <li class="specifics__item">
               <div class="specifics-relative">
+                <picture>
+                  <source
+                    srcset="./images/desktop/web-studio/specifics/mobile-app-370-1x.webp 1x,./images/desktop/web-studio/specifics/mobile-app-740-2x.webp 2x,./images/desktop/web-studio/specifics/mobile-app-1110-3x.webp 3x,"
+                    type="image/webp" media="(min-width: 1200px)" />
+                  <source
+                    srcset="./images/desktop/web-studio/specifics/mobile-app-370-1x.jpg 1x,./images/desktop/web-studio/specifics/mobile-app-740-2x.jpg 2x,./images/desktop/web-studio/specifics/mobile-app-1110-3x.jpg 3x,"
+                    type="image/jpg" media="(min-width: 1200px)" />
                 <img
                   class="specifics__img"
                   src="./images/img2.jpg"
@@ -144,11 +158,19 @@
                   width="370"
                   height="294"
                 />
+                </picture>
                 <p class="specifics__text">Мобільні додатки</p>
               </div>
             </li>
             <li class="specifics__item">
               <div class="specifics-relative">
+                <picture>
+                  <source
+                    srcset="./images/desktop/web-studio/specifics/Design-solutions-370-1x.webp 1x,./images/desktop/web-studio/specifics/Design-solutions-740-2x.webp 2x,./images/desktop/web-studio/specifics/Design-solutions-1110-3x.webp 3x,"
+                    type="image/webp" media="(min-width: 1200px)" />
+                  <source
+                    srcset="./images/desktop/web-studio/specifics/Design-solutions-370-1x.jpg 1x,./images/desktop/web-studio/specifics/Design-solutions-740-2x.jpg 2x,./images/desktop/web-studio/specifics/Design-solutions-1110-3x.jpg 3x,"
+                    type="image/jpg" media="(min-width: 1200px)" />
                 <img
                   class="specifics__img"
                   src="./images/img3.jpg"
@@ -156,6 +178,7 @@
                   width="370"
                   height="294"
                 />
+                </picture>
                 <p class="specifics__text">Дизайнерські рішення</p>
               </div>
             </li>
@@ -167,13 +190,31 @@
           <h2 class="ourteam__title">Наша команда</h2>
           <ul class="ourteam-cards">
             <li class="ourteam-cards__item">
-              <img
+              <picture>
+                <source srcset="./images/mobile/web-studio/Product-Designer-450-1x.webp 1x, ./images/mobile/web-studio/Product-Designer-900-2x.webp 2x, ./images/mobile/web-studio/Product-Designer-1350-3x.webp 3x"  type="image/webp" media="(max-width: 767px)"/>
+              <source
+                srcset="./images/mobile/web-studio/Product-Designer-450-1x.jpg 1x, ./images/mobile/web-studio/Product-Designer-900-2x.jpg 2x, ./images/mobile/web-studio/Product-Designer-1350-3x.jpg 3x"
+                type="image/jpg" media="(max-width: 767px)" />
+              <source
+                srcset="./images/tablet/web-studio/Product-Designer-354-1x.webp 1x, ./images/tablet/web-studio/Product-Designer-708-2x.webp 2x, ./images/tablet/web-studio/Product-Designer-1062-3x.webp 3x"
+                type="image/webp" media="(max-width: 1199px)" />
+                <source
+                srcset="./images/tablet/web-studio/Product-Designer-354-1x.jpg 1x, ./images/tablet/web-studio/Product-Designer-708-2x.jpg 2x, ./images/tablet/web-studio/Product-Designer-1062-3x.jpg 3x"
+                type="image/jpg" media="(max-width: 1199px)" />
+                <source
+                  srcset="./images/desktop/web-studio/team/Product-Designer-270-1x.webp 1x, ./images/desktop/web-studio/team/Product-Designer-540-2x.webp 2x, ./images/desktop/web-studio/team/Product-Designer-810-3x.webp 3x"
+                  type="image/webp" media="(min-width: 1200px)" />
+                <source
+                  srcset="./images/desktop/web-studio/team/Product-Designer-270-1x.jpg 1x, ./images/desktop/web-studio/team/Product-Designer-540-2x.jpg 2x, ./images/desktop/web-studio/team/Product-Designer-810-3x.jpg 3x"
+                  type="image/jpg" media="(min-width: 1200px)" />
+                <img
                 class="ourteam-cards__img"
                 src="./images/product-designer1.jpg"
                 alt="Фото чоловіка Product Designer"
                 width="270"
                 height="260"
               />
+              </picture>
               <div class="ourteam-cards__text-position">
                 <h3 class="ourteam-cards__name">Ігор Дем'яненко</h3>
                 <p class="ourteam-cards__text" lang="en">Product Designer</p>
@@ -212,6 +253,25 @@
               </div>
             </li>
             <li class="ourteam-cards__item">
+              <picture>
+              <source
+                srcset="./images/mobile/web-studio/Frontend-Developer-450-1x.webp 1x, ./images/mobile/web-studio/Frontend-Developer-900-2x.webp 2x, ./images/mobile/web-studio/Frontend-Developer-1350-3x.webp 3x"
+                type="image/webp" media="(max-width: 767px)" />
+              <source
+                srcset="./images/mobile/web-studio/Frontend-Developer-450-1x.jpg 1x, ./images/mobile/web-studio/Frontend-Developer-900-2x.jpg 2x, ./images/mobile/web-studio/Frontend-Developer-1350-3x.jpg 3x"
+                type="image/jpg" media="(max-width: 767px)" />
+              <source
+                srcset="./images/tablet/web-studio/Frontend-Developer-354-1x.webp 1x, ./images/tablet/web-studio/Frontend-Developer-708-2x.webp 2x, ./images/tablet/web-studio/Frontend-Developer-1062-3x.webp 3x"
+                type="image/webp" media="(max-width: 1199px)" />
+              <source
+                srcset="./images/tablet/web-studio/Frontend-Developer-354-1x.jpg 1x, ./images/tablet/web-studio/Frontend-Developer-708-2x.jpg 2x, ./images/tablet/web-studio/Frontend-Developer-1062-3x.jpg 3x"
+                type="image/jpg" media="(max-width: 1199px)" />
+              <source
+                srcset="./images/desktop/web-studio/team/Frontend-Developer-270-1x.webp 1x, ./images/desktop/web-studio/team/Frontend-Developer-540-2x.webp 2x, ./images/desktop/web-studio/team/Frontend-Developer-810-3x.webp 3x"
+                type="image/webp" media="(min-width: 1200px)" />
+              <source
+                srcset="./images/desktop/web-studio/team/Frontend-Developer-270-1x.jpg 1x, ./images/desktop/web-studio/team/Frontend-Developer-540-2x.jpg 2x, ./images/desktop/web-studio/team/Frontend-Developer-810-3x.jpg 3x"
+                type="image/jpg" media="(min-width: 1200px)" />
               <img
                 class="ourteam-cards__img"
                 src="./images/frontend-developer2.jpg"
@@ -219,6 +279,7 @@
                 width="270"
                 height="260"
               />
+              </picture>
               <div class="ourteam-cards__text-position">
                 <h3 class="ourteam-cards__name">Ольга Рєпіна</h3>
                 <p class="ourteam-cards__text" lang="en">Frontend Developerr</p>
@@ -257,6 +318,25 @@
               </div>
             </li>
             <li class="ourteam-cards__item">
+              <picture>
+                <source
+                  srcset="./images/mobile/web-studio/Marketing-450-1x.webp 1x, ./images/mobile/web-studio/Marketing-900-2x.webp 2x, ./images/mobile/web-studio/Marketing-1350-3x.webp 3x"
+                  type="image/webp" media="(max-width: 767px)" />
+                <source
+                  srcset="./images/mobile/web-studio/Marketing-450-1x.jpg 1x, ./images/mobile/web-studio/Marketing-900-2x.jpg 2x, ./images/mobile/web-studio/Marketing-1350-3x.jpg 3x"
+                  type="image/jpg" media="(max-width: 767px)" />
+                <source
+                  srcset="./images/tablet/web-studio/Marketing-354-1x.webp 1x, ./images/tablet/web-studio/Marketing-708-2x.webp 2x, ./images/tablet/web-studio/Marketing-1062-3x.webp 3x"
+                  type="image/webp" media="(max-width: 1199px)" />
+                <source
+                  srcset="./images/tablet/web-studio/Marketing-354-1x.jpg 1x, ./images/tablet/web-studio/Marketing-708-2x.jpg 2x, ./images/tablet/web-studio/Marketing-1062-3x.jpg 3x"
+                  type="image/jpg" media="(max-width: 1199px)" />
+                <source
+                  srcset="./images/desktop/web-studio/team/Marketing-270-1x.webp 1x, ./images/desktop/web-studio/team/Marketing-540-2x.webp 2x, ./images/desktop/web-studio/team/Marketing-810-3x.webp 3x"
+                  type="image/webp" media="(min-width: 1200px)" />
+                <source
+                  srcset="./images/desktop/web-studio/team/Marketing-270-1x.jpg 1x, ./images/desktop/web-studio/team/Marketing-540-2x.jpg 2x, ./images/desktop/web-studio/team/Marketing-810-3x.jpg 3x"
+                  type="image/jpg" media="(min-width: 1200px)" />
               <img
                 class="ourteam-cards__img"
                 src="./images/marketing3.jpg"
@@ -264,6 +344,7 @@
                 width="270"
                 height="260"
               />
+              </picture>
               <div class="ourteam-cards__text-position">
                 <h3 class="ourteam-cards__name">Микола Тарасов</h3>
                 <p class="ourteam-cards__text" lang="en">Marketing</p>
@@ -302,6 +383,25 @@
               </div>
             </li>
             <li class="ourteam-cards__item">
+              <picture>
+                <source
+                  srcset="./images/mobile/web-studio/UI-Designer-450-1x.webp 1x, ./images/mobile/web-studio/UI-Designer-900-2x.webp 2x, ./images/mobile/web-studio/UI-Designer-1350-3x.webp 3x"
+                  type="image/webp" media="(max-width: 767px)" />
+                <source
+                  srcset="./images/mobile/web-studio/UI-Designer-450-1x.jpg 1x, ./images/mobile/web-studio/UI-Designer-900-2x.jpg 2x, ./images/mobile/web-studio/UI-Designer-1350-3x.jpg 3x"
+                  type="image/jpg" media="(max-width: 767px)" />
+                <source
+                  srcset="./images/tablet/web-studio/UI-Designer-354-1x.webp 1x, ./images/tablet/web-studio/UI-Designer-708-2x.webp 2x, ./images/tablet/web-studio/UI-Designer-1062-3x.webp 3x"
+                  type="image/webp" media="(max-width: 1199px)" />
+                <source
+                  srcset="./images/tablet/web-studio/UI-Designer-354-1x.jpg 1x, ./images/tablet/web-studio/UI-Designer-708-2x.jpg 2x, ./images/tablet/web-studio/UI-Designer-1062-3x.jpg 3x"
+                  type="image/jpg" media="(max-width: 1199px)" />
+                <source
+                  srcset="./images/desktop/web-studio/team/UI-Designer-270-1x.webp 1x, ./images/desktop/web-studio/team/UI-Designer-540-2x.webp 2x, ./images/desktop/web-studio/team/UI-Designer-810-3x.webp 3x"
+                  type="image/webp" media="(min-width: 1200px)" />
+                <source
+                  srcset="./images/desktop/web-studio/team/UI-Designer-270-1x.jpg 1x, ./images/desktop/web-studio/team/UI-Designer-540-2x.jpg 2x, ./images/desktop/web-studio/team/UI-Designer-810-3x.jpg 3x"
+                  type="image/jpg" media="(min-width: 1200px)" />
               <img
                 class="ourteam-cards__img"
                 src="./images/ui-designer4.jpg"
@@ -309,6 +409,7 @@
                 width="270"
                 height="260"
               />
+              </picture>
               <div class="ourteam-cards__text-position">
                 <h3 class="ourteam-cards__name">Михайло Єрмаков</h3>
                 <p class="ourteam-cards__text" lang="en">UI Designer</p>
