@@ -2,28 +2,17 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-@media screen and (min-width: $tablet){ 
-  flex-basis: calc((100% - 30px) / 2);
-  justify-content: space-between;
-}
-@media screen and (min-width: $desktop) {
-  flex-basis: calc((100% - 90px) / 4);
-}
 &__item {
     background-color: var(--color-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    width: 450px;
 @media screen and (min-width: $tablet) {
-    width: 354px;
+    flex-basis: calc((100% - 30px) / 2);
   }
 @media screen and (min-width: $desktop) {
-  width: 270px;
+  flex-basis: calc((100% - 90px) / 4);
 }
-}
-&__img{
-  width: 100%;
 }
 &__text-position {
     margin: 30px auto 16px;

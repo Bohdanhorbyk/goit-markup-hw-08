@@ -1,19 +1,16 @@
 .features{
-  &-flex {
-  display: flex;
-  justify-content: center;
-@media screen and (min-width: $tablet) {
-    flex-basis: calc((100% - 60px) / 2);
-  }
-@media screen and (min-width: $desktop) {
-    flex-basis: calc((100% - 90px) / 4);
-}
-}
-
 &__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 30px;  
+}
+&__item {
+  @media screen and (min-width: $tablet) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+  @media screen and (min-width: $desktop) {
+     flex-basis: calc((100% - 90px) / 4);
+   }
 }
 &__title {
   display: flex;
@@ -32,17 +29,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 450px;
   height: 120px;
   background-color: var(--bgcolor-icon-features);
   margin-bottom: 30px;
   border-radius: 4px;
-@media screen and (min-width: $tablet) {
-    max-width: 354px;
-  }
-@media screen and (min-width: $desktop) {
-    max-width: 270px;
-}
 }
 &__text {
   font-size: 14px;
@@ -50,14 +40,7 @@
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-top: 10px;
-  max-width: 450px; 
   align-items: center;
   box-sizing: content-box;
-@media screen and (min-width: $tablet) {
-  max-width: 354px;
-}
-@media screen and (min-width: $desktop) {
-  max-width: 270px;
-}
 }
 }

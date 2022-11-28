@@ -55,11 +55,11 @@ display: none;
     cursor: pointer;
 
 }
-&__navigation{
-@media screen and (min-width: $mobile) and (max-width: $tablet) {
-    // margin-bottom: auto;
-}
-}
+// &__navigation{
+// @media screen and (min-width: $mobile) and (max-width: $tablet) {
+//     // margin-bottom: auto;
+// }
+// }
 &__nav{
     display: flex;
     flex-direction: column;
@@ -105,23 +105,21 @@ display: none;
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--color-accent);
-    &--text-color {
-    font-size: 18px;
-    color: var(--secondary-text-color);
-    
-    }
- @media screen and (min-width: $mobile) and (max-width: 767px) {
-      &--text-color {
-          font-size: 24px;
-      }
-  }
 @media screen and (min-width: $mobile) and (max-width: 767px) {
         font-size: 34px;
         line-height: 1.17;
     }
+    &--text-color {
+    font-size: 18px;
+    color: var(--secondary-text-color);
+    }
+    @media screen and (min-width: $mobile) and (max-width: 767px) {
+    &--text-color {
+        font-size: 24px;
+        }
+    }
 }
 }
-
 
 .mobile-social{
     display: flex;
