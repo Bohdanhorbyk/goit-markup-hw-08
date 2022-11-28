@@ -31,7 +31,6 @@
   flex-basis: calc((100% - 30px) / 2);
   height: 92px;
 @media screen and (min-width: $tablet){
-    max-width: 216px;
     flex-basis: calc((100% - 60px) / 3);
     justify-content: space-around;
     } 
