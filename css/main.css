@@ -259,6 +259,9 @@ img {
   }
 }
 
+.customers {
+  text-align: center;
+}
 .customers-flex {
   display: flex;
   justify-content: center;
@@ -712,7 +715,6 @@ img {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .mobile-contacts__link--text-color {
     font-size: 24px;
-    line-height: 1.17;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -738,9 +740,8 @@ img {
   padding-right: 10px;
   color: var(--color-accent);
   font-weight: 500;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
-.mobile-social__link:not(:last-child) {
+.mobile-social__item:not(:last-child) .mobile-social__link {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
@@ -1156,7 +1157,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 100%;
     background-size: 1600px 600px;
     max-width: 1600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mtd/desktop/hero-1600-1x.jpg");
