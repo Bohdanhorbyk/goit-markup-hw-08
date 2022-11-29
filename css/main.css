@@ -827,6 +827,7 @@ img {
 .ourteam-cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 .ourteam-cards__item {
@@ -843,6 +844,9 @@ img {
   .ourteam-cards__item {
     flex-basis: calc((100% - 90px) / 4);
   }
+}
+.ourteam-cards__img {
+  width: 100%;
 }
 .ourteam-cards__text-position {
   margin: 30px auto 16px;
